@@ -24,6 +24,7 @@ export default {
   },
   mounted() {
     this.fetchData();
+    eventBus.$on('booking-added', (booking) => this.bookings.push(booking))
   },
   methods: {
     fetchData(){
