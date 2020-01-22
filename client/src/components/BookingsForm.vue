@@ -9,7 +9,7 @@
     <input type="email" id="email" v-model="email_address">
 
     <label for="booked-in">Booking Status: </label>
-    <select id="booked-in" v-model='checkin_status'>
+    <select id="booked-in" v-model.bool='checkin_status'>
       <option value="true">Currently Booked</option>
       <option value="false">Not Currently Booked</option>
     </select>
@@ -27,7 +27,7 @@ export default {
     return {
       guest_name: '',
       email_address: '',
-      checkin_status: ''
+      checkin_status: null
     }
   },
   methods: {

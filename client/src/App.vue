@@ -2,7 +2,7 @@
   <div id="app">
     <h1>Hotel Management</h1>
     <bookings-form/>
-    <bookings-list :bookings="bookings"/>
+    <bookings-list/>
   </div>
 </template>
 
